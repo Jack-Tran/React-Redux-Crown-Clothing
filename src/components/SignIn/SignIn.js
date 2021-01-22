@@ -17,7 +17,7 @@ class SignIn extends React.Component {
     };
   }
 
-  onSubmitHandler = async (event) => {
+  handleSubmit = async (event) => {
     event.preventDefault();
 
     const { email, password } = this.state;
@@ -30,7 +30,7 @@ class SignIn extends React.Component {
     }
   };
 
-  onChangeHandler = (event) => {
+  handleChange = (event) => {
     const { value, name } = event.target;
     this.setState({ [name]: value });
   };
@@ -43,12 +43,12 @@ class SignIn extends React.Component {
         <h2>Already have an account?</h2>
         <span>Sign in with your email and password</span>
 
-        <form onSubmit={this.onSubmitHandler}>
+        <form onSubmit={this.handleSubmit}>
           <FormInput
             name="email"
             type="email"
             value={email}
-            handleChange={this.onChangeHandler}
+            handleChange={this.handleChange}
             label="Email"
             required
           />
@@ -56,7 +56,7 @@ class SignIn extends React.Component {
             name="password"
             type="password"
             value={password}
-            handleChange={this.onChangeHandler}
+            handleChange={this.handleChange}
             label="Password"
             required
           />
