@@ -25,7 +25,7 @@ class SignUp extends React.Component {
     const { displayName, email, password, confirmPassword } = this.state;
 
     if (password !== confirmPassword) {
-      alert("password don't match");
+      alert("Password does not match");
       return;
     }
 
@@ -50,8 +50,9 @@ class SignUp extends React.Component {
 
   handleChange = (event) => {
     const { name, value } = event.target;
-
-    this.setState({ [name]: value });
+    this.setState({
+      [name]: value,
+    });
   };
 
   render() {
@@ -59,47 +60,43 @@ class SignUp extends React.Component {
 
     return (
       <div className="sign-up">
-        <h2 className="title">Do not have an account?</h2>
-        <span>Sign up with your email and password</span>
+        <h2>Don't have an account?</h2>
+        <span>Sign up with your email</span>
 
-        <form className="sign-up-form" onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit}>
           <FormInput
             type="text"
             name="displayName"
             value={displayName}
-            onChange={this.handleChange}
             label="Display Name"
-            required
+            onChange={this.handleChange}
           />
 
           <FormInput
             type="email"
             name="email"
             value={email}
-            onChange={this.handleChange}
             label="Email"
-            required
+            onChange={this.handleChange}
           />
 
           <FormInput
             type="password"
             name="password"
             value={password}
-            onChange={this.handleChange}
             label="Password"
-            required
+            onChange={this.handleChange}
           />
 
           <FormInput
             type="password"
             name="confirmPassword"
             value={confirmPassword}
-            onChange={this.handleChange}
             label="Confirm Password"
-            required
+            onChange={this.handleChange}
           />
 
-          <CustomButton type="submit">SIGN UP</CustomButton>
+          <CustomButton type="submit">Sign Up</CustomButton>
         </form>
       </div>
     );
