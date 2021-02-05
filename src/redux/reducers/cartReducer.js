@@ -17,7 +17,11 @@ const cartReducer = (state = initialState, action) => {
     case ADD_ITEM:
       return {
         ...state,
-
+        /*
+        initial set up before grouping (creating cartUtils we come back to here)
+        
+        cartItems: [...state.cartItems, action.payload],
+        */
         cartItems: addItemToCart(state.cartItems, action.payload),
       };
     default:
