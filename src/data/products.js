@@ -5,31 +5,31 @@ const products = [
     routeName: "hats",
     items: [
       {
-        id: 1,
+        id: 111,
         name: "Brown Brim",
         imageUrl: "/images/shop-img/hats/brown-brim.png",
         price: 25,
       },
       {
-        id: 2,
+        id: 222,
         name: "Blue Beanie",
         imageUrl: "/images/shop-img/hats/blue-beanie.png",
         price: 18,
       },
       {
-        id: 3,
+        id: 333,
         name: "Brown Cowboy",
         imageUrl: "/images/shop-img/hats/brown-cowboy.png",
         price: 35,
       },
       {
-        id: 4,
+        id: 444,
         name: "Grey Brim",
         imageUrl: "/images/shop-img/hats/grey-brim.png",
         price: 25,
       },
       {
-        id: 5,
+        id: 555,
         name: "Green Beanie",
         imageUrl: "/images/shop-img/hats/green-beanie.png",
         price: 18,
@@ -61,7 +61,7 @@ const products = [
     ],
   },
   {
-    id: 211,
+    id: 2,
     title: "Sneakers",
     routeName: "sneakers",
     items: [
@@ -116,7 +116,7 @@ const products = [
     ],
   },
   {
-    id: 311,
+    id: 3,
     title: "Jackets",
     routeName: "jackets",
     items: [
@@ -153,7 +153,7 @@ const products = [
     ],
   },
   {
-    id: 411,
+    id: 4,
     title: "Womens",
     routeName: "womens",
     items: [
@@ -202,7 +202,7 @@ const products = [
     ],
   },
   {
-    id: 511,
+    id: 5,
     title: "Mens",
     routeName: "mens",
     items: [
